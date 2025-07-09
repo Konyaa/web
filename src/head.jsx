@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 export default function Hero() {
   return (
     <section className="flex flex-col justify-center items-center text-center px-6 pt-20 pb-28 z-10 relative">
@@ -29,7 +30,7 @@ export default function Hero() {
       </div>
       <div className="absolute right-0 bottom-0 mb-8 mr-8">
         <a href="#" className="text-sm text-gray-300 hover:text-white flex items-center gap-1">
-          Explore More
+          Explore More <FontAwesomeIcon icon={faArrowDown} />
         </a>
       </div>
       

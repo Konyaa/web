@@ -17,7 +17,7 @@ export default function Footer() {
       </h2>
       <p className="text- text-gray-400 max-w-2xl mx-auto mb-6">
         Whether you're passionate about cutting-edge innovation, real-world engineering challenges,
-        or collaborative tech experiences ROBOTIK offers the perfect space to explore and grow.
+        or collaborative tech experiences ROBOTIIK offers the perfect space to explore and grow.
       </p>
 
       <div className="flex justify-center gap-6 text-white text-xl mb-6">
