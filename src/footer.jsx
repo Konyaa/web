@@ -5,6 +5,7 @@ import {
   faYoutube,
   faTiktok,
   faXTwitter,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './index.css'; 
@@ -26,6 +27,7 @@ export default function Footer() {
         <a href="#" className="hover:text-black hover:opacity-40 transition-colors"><FontAwesomeIcon icon={faTiktok} /></a>
         <a href="#" className="hover:text-red-500 transition-colors"><FontAwesomeIcon icon={faYoutube} /></a>
         <a href="#" className="hover:text-blue-500 transition-colors"><FontAwesomeIcon icon={faXTwitter} /></a>
+        <a href="#" className="hover:text-blue-400 transition-colors"><FontAwesomeIcon icon={faLinkedin} /></a>
       </div>
       <div className="w-400 h-0.5 bg-white mx-auto mb-6"></div>
 

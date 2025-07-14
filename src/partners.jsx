@@ -8,19 +8,19 @@ const partnersData = [
     title: 'PT',
     image: '',
     row: 'row-start-1 row-end-2',
-    col: 'col-start-1 col-end-2',
+    col: 'col-start-1 col-end-4',
   },
   {
     title: 'Robo',
     image: '',
     row: 'row-start-1 row-end-2',
-    col: 'col-start-7 col-end-9',
+    col: 'col-start-4 col-end-7',
   },
   {
     title: 'Innov',
     image: '',
-    row: 'row-start-1 row-end-2',
-    col: 'col-start-3 col-end-6',
+    row: 'row-start-2 row-end-3',
+    col: 'col-start-1 col-end-3',
   },
   {
     title: 'Digi',
@@ -55,7 +55,13 @@ function RandomNumber({ n }) {
 
 export default function PartnersPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0b1e3d] to-[#112a4c] text-white font-sans relative overflow-hidden">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#001F3F] to-[#001F3F] text-white font-sans relative overflow-hidden">
+     
+      <div className="absolute w-40 h-40 bg-[#0073BA] opacity-20 blur-3xl rounded-full top-10 left-10"></div>
+      <div className="absolute w-32 h-32 bg-[#0073BA] opacity-20 blur-2xl rounded-full top-1/3 right-10"></div>
+      <div className="absolute w-24 h-24 bg-[#0073BA] opacity-10 blur-2xl rounded-full bottom-1/4 left-1/4"></div>
+      <div className="absolute w-28 h-28 bg-[#0073BA] opacity-10 blur-2xl rounded-full bottom-10 right-1/3"></div>
+
       <section className="px-6 md:px-16 lg:px-32 pt-20 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <div>
           <h2 className="text-6xl font-extrabold leading-tight text-white">
@@ -86,7 +92,7 @@ export default function PartnersPage() {
 
       
       <section className="px-6 md:px-16 lg:px-32 py-16">
-        <div className="grid auto-rows-auto grid-cols-6 gap-6 max-w-6xl mx-auto my-20 mb-8 px-4" style={{ gridAutoFlow: "row" }}>
+        <div className="grid auto-rows-auto grid-cols-6 gap-6 max-w-6xl mx-auto my-8 px-4" style={{ gridAutoFlow: "row" }}>
           {partnersData.map((item, i) => (
             <div key={i} className={`relative rounded-2xl overflow-hidden shadow-lg bg-white min-h-[220px] flex items-end group ${item.row} ${item.col}`}>
               <img
@@ -111,40 +117,52 @@ export default function PartnersPage() {
       </section>
 
       
-      <section className="px-6 md:px-16 lg:px-32 py-20 bg-gradient-to-b from-[#0b1e3d] to-[#112a4c] grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        <div>
+      <section className="px-6 md:px-16 lg:px-32 py-20 grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+        <div className="col-span-1">
           <h2 className="text-6xl font-extrabold leading-tight text-white">
             BECOME<br />A PARTNER
           </h2>
         </div>
-        <div className="bg-white/10 backdrop-blur-xl p-8 rounded-xl w-full">
+        <div className="bg-white/10 backdrop-blur-xl p-8 rounded-xl w-full col-span-2">
           <form className="space-y-6 w-full text-white">
-            <input
-              type="text"
-              defaultValue="ROBOTIK 2025"
-              className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
-              placeholder="Name"
-            />
-            <div className="flex gap-4">
+            <div>
+              <label className="block text-sm font-semibold mb-1">Name</label>
               <input
-                type="email"
-                defaultValue="robotik.filkom@ub.ac.id"
+                type="text"
+                defaultValue="ROBOTIK 2025"
                 className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
-                placeholder="Email"
-              />
-              <input
-                type="tel"
-                defaultValue="0812 3456 7890"
-                className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
-                placeholder="Phone Number"
+                placeholder="Name"
               />
             </div>
-            <textarea
-              defaultValue="Hi.."
-              className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
-              rows="4"
-              placeholder="Message"
-            ></textarea>
+            <div className="flex flex-col lg:flex-row gap-4">
+              <div className="w-full">
+                <label className="block text-sm font-semibold mb-1">Email</label>
+                <input
+                  type="email"
+                  defaultValue="robotik.filkom@ub.ac.id"
+                  className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="w-full">
+                <label className="block text-sm font-semibold mb-1">Phone Number</label>
+                <input
+                  type="tel"
+                  defaultValue="0812"
+                  className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm font-semibold mb-1">Message</label>
+              <textarea
+                defaultValue="Messege"
+                className="w-full px-4 py-3 rounded-md border border-white/40 bg-transparent text-lg placeholder-white"
+                rows="4"
+                placeholder="Message"
+              ></textarea>
+            </div>
             <div className="flex justify-end">
               <button
                 type="submit"
