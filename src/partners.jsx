@@ -1,5 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const partnersData = [
   {
@@ -63,14 +65,19 @@ export default function PartnersPage() {
       <div className="absolute w-24 h-24 bg-[#0073BA] opacity-10 blur-2xl rounded-full bottom-1/4 left-1/4"></div>
       <div className="absolute w-28 h-28 bg-[#0073BA] opacity-10 blur-2xl rounded-full bottom-10 right-1/3"></div>
 
-      <section className="px-6 md:px-16 lg:px-32 pt-20 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        <div>
+     
+      <section className="px-6 md:px-16 lg:px-32 pt-20 text-center">
+        <h1 className="text-6xl font-bold text-white mb-16">Partners</h1>
+      </section>
+
+      
+      <section className="px-6 md:px-16 lg:px-32 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div className="text-center">
           <h2 className="text-6xl font-extrabold leading-tight text-white">
             Why<br />choose<br />ROBOTIIK!
           </h2>
         </div>
         <div className="lg:col-span-2 space-y-6">
-          <h2 className="text-6xl font-bold text-white">Partners</h2>
           <p className="text-gray-300 text-base max-w-3xl">
             ROBOTIIK provides real benefits to sponsors by reaching students and the community through educational activities, competitions, and social media. Your support will help develop robotics technology while also being an effective and positive promotional tool.
           </p>
@@ -134,69 +141,65 @@ export default function PartnersPage() {
       </section>
 
       
-   <section className="px-6 md:px-16 lg:px-32 py-20 flex flex-col lg:flex-row gap-20 items-start">
-  <div className="lg:w-1/3">
-    <h2 className="text-6xl font-extrabold leading-tight text-white">
-      BECOME<br />A PARTNER
-    </h2>
-  </div>
-
-  <div className="lg:w-2/3 w-full">
-    <div className="space-y-8 w-full text-white">
-
-      <div>
-        <label className="block text-sm font-semibold mb-3">Name</label>
-        <input
-          type="text"
-          defaultValue="ROBOTIIK 2025"
-          className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60"
-          placeholder="Name"
-        />
-      </div>
-
-      <div className="flex flex-col lg:flex-row gap-12">
-        <div className="w-full">
-          <label className="block text-sm font-semibold mb-3">Email</label>
-          <input
-            type="email"
-            defaultValue="robotiik.filkom@ub.ac.id"
-            className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60"
-            placeholder="Email"
-          />
+      <section className="px-6 md:px-16 lg:px-32 py-20 flex flex-col lg:flex-row gap-20 items-start">
+        <div className="lg:w-1/3 text-center">
+          <h2 className="text-6xl font-extrabold leading-tight text-white">
+            BECOME<br />A PARTNER
+          </h2>
         </div>
-        <div className="w-full">
-          <label className="block text-sm font-semibold mb-3">Phone Number</label>
-          <input
-            type="tel"
-            defaultValue="0812 3456 7890"
-            className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60"
-            placeholder="Phone Number"
-          />
+
+        <div className="lg:w-2/3 w-full">
+          <div className="space-y-8 w-full text-white">
+
+            <div>
+              <label className="block text-sm font-semibold mb-3">Name</label>
+              <input
+                type="text"
+                className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div className="flex flex-col lg:flex-row gap-12">
+              <div className="w-full">
+                <label className="block text-sm font-semibold mb-3">Email</label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60"
+                  placeholder="your.email@company.com"
+                />
+              </div>
+              <div className="w-full">
+                <label className="block text-sm font-semibold mb-3">Phone Number</label>
+                <input
+                  type="tel"
+                  className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60"
+                  placeholder="0812 3456 7890"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold mb-3">Message</label>
+              <textarea
+                className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60 resize-none"
+                rows="4"
+                placeholder="Tell us about your partnership interest..."
+              ></textarea>
+            </div>
+
+            <div className="flex justify-end pt-6">
+              <button
+                type="submit"
+                className="bg-white text-[#0b1d36] font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition text-lg"
+              >
+                Submit <FontAwesomeIcon icon={faArrowRight} className="text-base" />
+              </button>
+            </div>
+
+          </div>
         </div>
-      </div>
-
-      <div>
-        <label className="block text-sm font-semibold mb-3">Message</label>
-        <textarea
-          defaultValue="Hi..."
-          className="w-full px-4 py-3 rounded-md bg-white/10 backdrop-blur-md text-white placeholder-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/60 resize-none"
-          rows="4"
-          placeholder="Message"
-        ></textarea>
-      </div>
-
-      <div className="flex justify-end pt-6">
-        <button
-          type="submit"
-          className="bg-white text-[#0b1d36] font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition text-lg"
-        >
-          Submit ➤
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
     </div>
   );
 }
