@@ -10,31 +10,31 @@ const achievementsData = [
   {
     id: 2,
     title: "Innovation Award",
-    image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "Received for outstanding innovative design.",
   },
   {
     id: 3,
     title: "Champion",
-    image: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "First place in regional competition.",
   },
   {
     id: 4,
     title: "Juara 1",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "Juara 1 dalam perlombaan robot tingkat.",
   },
   {
     id: 5,
     title: "Juara 2",
-    image: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "Juara 2 dalam perlombaan robot tingkat.",
   },
   {
     id: 6,
     title: "Juara 3",
-    image: "https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "Juara 3 dalam perlombaan robot tingkat.",
   },
   {
@@ -46,13 +46,13 @@ const achievementsData = [
   {
     id: 8,
     title: "Juara 5",
-    image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "Juara 5 dalam perlombaan robot tingkat nasional.",
   },
   {
     id: 9,
     title: "Juara 6",
-    image: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
     desc: "Juara 6 dalam perlombaan robot tingkat nasional.",
   },
 ];
@@ -99,7 +99,6 @@ export default function Achievement() {
           achievement={achievementsData[1]} 
           className="row-start-1 row-end-2 col-start-5 col-end-7" 
         />
-
         <AchievementCard 
           achievement={achievementsData[2]} 
           className="row-start-2 row-end-3 col-start-1 col-end-3" 
@@ -112,7 +111,6 @@ export default function Achievement() {
           achievement={achievementsData[4]} 
           className="row-start-2 row-end-3 col-start-5 col-end-7" 
         />
-        
         <AchievementCard 
           achievement={achievementsData[5]} 
           className="row-start-3 row-end-4 col-start-1 col-end-3" 
@@ -121,7 +119,6 @@ export default function Achievement() {
           achievement={achievementsData[6]} 
           className="row-start-3 row-end-4 col-start-3 col-end-7" 
         />
-        
         <AchievementCard 
           achievement={achievementsData[7]} 
           className="row-start-4 row-end-5 col-start-1 col-end-5" 
