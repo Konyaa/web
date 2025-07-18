@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import logo from './src/assets/img/logo.png';
 
 export default function Navbar() {
   
@@ -11,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-6 py-4 text-sm z-10 relative m-2">
       <div>
-        <img src="/src/assets/img/logo.png" alt="ROBOTIIK Logo" className="h-8 w-24" />
+        <img src={logo} alt="ROBOTIIK Logo" className="h-8 w-24" />
       </div>
       <div className="space-x-6 text-white font-medium">
         <NavLink to="/" className={navLinkClass}>Home</NavLink>
