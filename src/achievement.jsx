@@ -59,7 +59,7 @@ const achievementsData = [
 
 const AchievementCard = ({ achievement, className }) => {
   return (
-    <div className={`relative rounded-2xl overflow-hidden shadow-lg bg-white min-h-[220px] flex items-end group cursor-pointer transform transition-all duration-300 hover:scale-105 ${className}`}>
+    <div className={`relative rounded-2xl overflow-hidden shadow-lg bg-black min-h-[220px] flex items-end group cursor-pointer transform transition-all duration-300 hover:scale-105 ${className}`}>
       <img
         src={achievement.image}
         alt={achievement.title}
